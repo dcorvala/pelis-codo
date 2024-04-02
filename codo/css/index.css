@@ -8,7 +8,7 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../img/resumen_peliculas_2018.jpg'); /* Ruta a tu imagen de fondo */
+    /* background-image: url('../img/resumen_peliculas_2018.jpg'); */
 opacity: 1rem;
     background-size: cover;
     background-position: center;
@@ -83,4 +83,16 @@ footer {
     position: fixed; /* O position: absolute; */
     bottom: 0;
     width: 100%;
+}
+
+.carousel {
+    height: 100vh;
+}
+
+/* Ajuste para que las imágenes del carrusel ocupen toda la altura */
+.carousel-item img {
+    height: 50%; /* 100% de la altura del contenedor */
+    width: auto; /* Restablecer el ancho automático */
+    max-width: 100%; /* 100% del ancho del contenedor */
+    object-fit: contain; /* Ajustar la imagen sin cortarla */
 }
