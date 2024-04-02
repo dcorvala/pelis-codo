@@ -1,0 +1,60 @@
+body {
+    background-image: url(../img/resumen_peliculas_2018.jpg);
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+}
+
+form {
+    background-color: #fff; /* Color de fondo del formulario */
+    max-width: 400px;
+    margin: 50px auto; /* Centrar en la página */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+h2 {
+    text-align: center;
+    color: #333; /* Color del texto */
+}
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* El tamaño incluye el relleno y el borde */
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.cancelar{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+input[type="button"]:hover {
+    background-color: #45a049;
+}

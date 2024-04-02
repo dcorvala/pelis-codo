@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>Contacto</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="peliculas.html">Peliculas</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="../pages/form.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+     
+    <form action="procesar_formulario.php" method="post">
+
+        <h1>Formulario de Contaco</h1>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <input type="submit" value="Enviar">
+        <input type="button" class="cancelar" value="Cancelar">
+    </form>
+    
+    <footer>
+        <p>&copy; 2024 TuCompañia. Todos los derechos reservados.</p>
+    </footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
