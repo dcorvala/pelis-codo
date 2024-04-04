@@ -23,26 +23,36 @@
      
     <form action="procesar_formulario.php" method="post">
 
-        <h1>Formulario de Contaco</h1>
+    <h1 class="h1">Formulario de Contacto</h1>
 
+    <div class="div">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" name="nombre" required placeholder="Ingrese aquí su nombre">
+    </div>
 
+    <div class="div">
         <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required>
+        <input type="text" id="apellido" name="apellido" required placeholder="Ingrese aquí su apellido">
+    </div>
 
+    <div class="div">
         <label for="dni">DNI:</label>
-        <input type="text" id="dni" name="dni" required>
+        <input type="text" id="dni" name="dni" required placeholder="Ingrese aquí su numero de documento">
+    </div>
 
+    <div class="div">
         <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required>
+        <input type="tel" id="telefono" name="telefono" required placeholder="Ingrese aquí su numero teléfono">
+    </div>
 
+    <div class="div">
         <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-
-        <input type="submit" value="Enviar">
-        <input type="button" class="cancelar" value="Cancelar">
-    </form>
+        <input type="email" id="email" name="email" required placeholder="Ingrese aquí su correo electrónico">
+    </div>
+    
+    <input type="submit" value="Enviar">
+    <input type="button" class="cancelar" value="Cancelar">
+</form>
     
     <footer>
         <p>&copy; 2024 TuCompañia. Todos los derechos reservados.</p>

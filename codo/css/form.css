@@ -1,12 +1,14 @@
 body {
-    background-image: url(../img/resumen_peliculas_2018.jpg);
+    background-image: url(../img/Fondo.jpg);
     font-family: Arial, sans-serif;
 }
 
-h1{
+.h1{
+    font-family: "Abril Fatface", serif;
     text-align: center;
-    text-decoration: underline;
-    color: black;
+    /* text-decoration: underline; */
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px; /* Ajusta la separación entre el título y el campo "Nombre" */
 }
 
 form {
@@ -57,4 +59,9 @@ input[type="submit"]:hover {
 }
 input[type="button"]:hover {
     background-color: #45a049;
+}
+
+.div {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
 }
