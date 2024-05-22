@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    position: relative; 
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.carousel-section {
+    background-color: #fff; 
+    padding: 20px 0; 
+    background-image: url("../img/carruselfondo.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.carousel {
+    max-width: 25%; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.carousel-item img {
+    width: 100%; 
+    height: auto ; 
+    object-fit: contain; 
+}
+
+.h2 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.parrafo {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    margin: 10px 0; 
+}
+
+
+.paragraph-container {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 10px; 
+    margin: 20px auto; 
+}
+
+
+.no-background {
+    background-color: transparent; 
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; 
+    width: 100%;
+    margin-top: 20px; 
+}
