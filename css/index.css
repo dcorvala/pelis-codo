@@ -53,7 +53,7 @@ nav ul li a:hover {
 .carousel-section {
     background-color: #ffffff; 
     padding: 20px 0; 
-    background-image: url("/img/carrusel_fondo.jpg"); 
+    background-image: url("/img/carruselfondo.jpg"); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
