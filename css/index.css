@@ -49,45 +49,25 @@ nav ul li a:hover {
     background-color: #555;
 }
 
+.carousel-section {
+    background-color: #ffffff; /* Color de fondo del contenedor del carrusel */
+    padding: 20px 0; /* Espacio alrededor del carrusel */
+    background-image: url('/img/carrusel_fondo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* La imagen cubrirá todo el contenedor */
+    background-position: center; /* Centrar la imagen de fondo */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+}
+
 .carousel {
-    display: grid;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.carousel h2, .carousel p {
-    margin-bottom: 20px;
-}
-
-.card {
-    height: 30rem;
-    width: 30rem;
-}
-
-.card img {
-    width: 100%; /* Utilizar todo el ancho de la tarjeta */
-    height: auto; /* Altura automática para mantener la proporción */
-    max-height: 200px; /* Altura máxima de la imagen */
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed; /* O position: absolute; */
-    bottom: 0;
-    width: 100%;
-}
-
-/* Ajuste para que las imágenes del carrusel ocupen toda la altura */
-.carousel {
-    height: 100vh;
+    max-width: 50%; /* Ancho máximo del carrusel */
+    margin: 0 auto; /* Centrar el carrusel */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 .carousel-item img {
-    height: auto; /* Ajuste automático de la altura */
     width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Ajuste automático de la altura */
     object-fit: contain; /* Ajustar la imagen sin cortarla */
 }
 
@@ -96,38 +76,35 @@ footer {
     font-weight: 400;
     font-style: normal;
     text-align: center;
+    margin: 20px 0;
 }
 
 .parrafo {
     font-family: "Bodoni Moda", serif;
     font-optical-sizing: auto;
     text-align: center;
+    margin: 10px 0; /* Espacio entre párrafos */
 }
 
-/* Media queries para ajustar estilos en dispositivos móviles */
-@media (max-width: 768px) {
-    .carousel {
-        height: auto; /* Ajustar la altura para pantallas pequeñas */
-    }
-
-    .carousel-item img {
-        height: auto; /* Ajuste automático de la altura */
-        width: 100%; /* Ocupa todo el ancho del contenedor */
-    }
-
-    .card {
-        height: auto; /* Ajuste automático de la altura */
-        width: 100%; /* Ocupa todo el ancho del contenedor */
-        margin-bottom: 20px; /* Espacio entre las tarjetas */
-    }
-
-    nav ul li {
-        display: block; /* Muestra los elementos de la navegación en bloque */
-        margin-bottom: 10px; /* Espacio entre los elementos de la navegación */
-    }
-
-    footer {
-        position: relative; /* Para que el pie de página esté al final del contenido */
-    }
+/* Estilos para el contenedor del párrafo */
+.paragraph-container {
+    background-color: #f0f0f0; /* Cambia este valor al color de fondo que prefieras */
+    padding: 20px;
+    border-radius: 10px; /* Añade esquinas redondeadas si lo deseas */
+    margin: 20px auto; /* Centra el contenedor */
 }
 
+/* Estilo adicional para el último párrafo */
+.no-background {
+    background-color: transparent; /* Fondo transparente */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Para que el pie de página esté al final del contenido */
+    width: 100%;
+    margin-top: 20px; /* Espacio entre el contenido y el pie de página */
+}
