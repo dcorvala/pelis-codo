@@ -8,20 +8,20 @@ body {
     text-align: center;
     /* text-decoration: underline; */
     color: rgb(255, 255, 255);
-    margin-bottom: 20px; /* Ajusta la separación entre el título y el campo "Nombre" */
+    margin-bottom: 20px; 
 }
 
 form {
-    background-color: #fff; /* Color de fondo del formulario */
+    background-color: #fff; 
     max-width: 400px;
-    margin: 50px auto; /* Centrar en la página */
+    margin: 50px auto; 
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 h2 {
     text-align: center;
-    color: #333; /* Color del texto */
+    color: #333; 
 }
 label, input {
     display: block;
@@ -34,7 +34,7 @@ input[type="email"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* El tamaño incluye el relleno y el borde */
+    box-sizing: border-box; 
 }
 input[type="submit"] {
     background-color: #4CAF50;

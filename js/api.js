@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 async function loadMovies() {
-    const apiKey = 'b722f8213ca1555f7d903ef9a177636c'; // Reemplaza 'tu_api_key' con tu propia API key de TMDb
+    const apiKey = 'b722f8213ca1555f7d903ef9a177636c'; // Aqui ponemos la key de la API de TMDb
     const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=es`);
     const data = await response.json();
-    const movies = data.results.slice(0, 10); // Obtener solo las 10 primeras películas
+    const movies = data.results.slice(0, 10); // Cuantas pelis queremos poner
 
     const carousel = document.getElementById('carousel');
     movies.forEach(movie => {
@@ -16,7 +16,7 @@ async function loadMovies() {
         card.classList.add('card');
 
         const poster = document.createElement('img');
-        poster.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`; // URL del póster de la película
+        poster.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`; // dir del poster de la peli
         poster.alt = movie.title;
 
         const info = document.createElement('div');
@@ -36,11 +36,6 @@ async function loadMovies() {
 
         carousel.appendChild(card);
     });
-
-    // Agregar "Ver Más" al final
-    /*const viewMore = document.createElement('div');*/
-   /* viewMore.classList.add('card');*/
-    
-    /*viewMore.innerHTML = '<h2>Ver Más</h2>';*/
-    /*carousel.appendChild(viewMore);*/
 }
+
+    

@@ -1,12 +1,12 @@
-/* Estilo general del body */
+
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco transparente */
+    background-color: rgba(255, 255, 255, 0.5); 
   }
   
-  /* Encabezado */
+  
   header {
     background-color: #f0f0f0;
     padding: 20px;
@@ -16,7 +16,7 @@ body {
     z-index: 100;
   }
   
-  /* Navegación */
+  
   nav ul {
     list-style-type: none;
     text-align: center;
@@ -36,44 +36,42 @@ nav ul li a:hover {
     background-color: #555;
 }
   
-  /* Contenido principal */
+  
   main {
     padding: 20px;
   }
   
-  /* Sección de películas destacadas */
+  
   .content h1 {
     text-align: center;
     margin-bottom: 20px;
   }
   
-  .carousel {
-    /* Estilos para el carrusel de películas */
-  }
+  
   
   .card {
-    background-color: rgba(114, 112, 111, 0.5); /* Fondo gris transparente */
-    text-align: center; /* Centrar texto dentro del card */
+    background-color: rgba(114, 112, 111, 0.5); 
+    text-align: center; 
     padding: 20px;
-    display: flex; /* Habilitar flexbox para el card */
-    flex-direction: column; /* Ordenar elementos en columna */
-    align-items: center; /* Centrar elementos horizontalmente */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
   }
   
   .card img {
     display: block;
     margin: 0 auto;
-    margin-bottom: 10px; /* Espacio entre la imagen y el nombre */
-    width: 200px; /* Ajustar ancho si es necesario */
-    height: auto; /* Conservar proporción de la imagen */
+    margin-bottom: 10px; 
+    width: 200px; 
+    height: auto; 
   }
   
   .card h2 {
-    margin: 0; /* Eliminar margen superior por defecto */
-    color: #333; /* Color de texto */
+    margin: 0; 
+    color: #333; 
   }
   
-  /* Pie de página */
+  
   footer {
     background-color: #333;
     color: #fff;
