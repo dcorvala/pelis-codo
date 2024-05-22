@@ -38,8 +38,9 @@ async function loadMovies() {
     });
 
     // Agregar "Ver Más" al final
-    const viewMore = document.createElement('div');
-    /*viewMore.classList.add('card');
-    viewMore.innerHTML = '<h2>Ver Más</h2>';*/
-    carousel.appendChild(viewMore);
+    /*const viewMore = document.createElement('div');*/
+   /* viewMore.classList.add('card');*/
+    
+    /*viewMore.innerHTML = '<h2>Ver Más</h2>';*/
+    /*carousel.appendChild(viewMore);*/
 }
