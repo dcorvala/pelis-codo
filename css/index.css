@@ -8,11 +8,10 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    /* background-image: url('../img/resumen_peliculas_2018.jpg'); */
-opacity: 1rem;
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Para que la imagen de fondo no se desplace al hacer scroll */
+    position: relative; /* Para que el pseudo-elemento esté posicionado correctamente */
 }
 body::before {
     content: "";
@@ -24,7 +23,6 @@ body::before {
     background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente */
     z-index: -1; /* Para que el pseudo-elemento esté detrás del contenido */
 }
-
 
 header {
     background-color: #333;
@@ -52,18 +50,16 @@ nav ul li a:hover {
 }
 
 .carousel {
-    
     display: grid;
-    grid-column-start: auto;
     text-align: center;
     padding: 20px 0;
 }
 
-.carousel h2, p {
-   /* background-color: red important!; */
+.carousel h2, .carousel p {
     margin-bottom: 20px;
 }
-.card{
+
+.card {
     height: 30rem;
     width: 30rem;
 }
@@ -74,26 +70,24 @@ nav ul li a:hover {
     max-height: 200px; /* Altura máxima de la imagen */
 }
 
-
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    /* position: fixed; O position: absolute; */
+    position: fixed; /* O position: absolute; */
     bottom: 0;
     width: 100%;
 }
 
+/* Ajuste para que las imágenes del carrusel ocupen toda la altura */
 .carousel {
     height: 100vh;
 }
 
-/* Ajuste para que las imágenes del carrusel ocupen toda la altura */
 .carousel-item img {
-    height: 50%; /* 100% de la altura del contenedor */
-    width: auto; /* Restablecer el ancho automático */
-    max-width: 100%; /* 100% del ancho del contenedor */
+    height: auto; /* Ajuste automático de la altura */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
     object-fit: contain; /* Ajustar la imagen sin cortarla */
 }
 
@@ -101,11 +95,39 @@ footer {
     font-family: "Abril Fatface", serif;
     font-weight: 400;
     font-style: normal;
-    text-align: center
-    }
+    text-align: center;
+}
 
 .parrafo {
     font-family: "Bodoni Moda", serif;
     font-optical-sizing: auto;
-    text-align: center
+    text-align: center;
 }
+
+/* Media queries para ajustar estilos en dispositivos móviles */
+@media (max-width: 768px) {
+    .carousel {
+        height: auto; /* Ajustar la altura para pantallas pequeñas */
+    }
+
+    .carousel-item img {
+        height: auto; /* Ajuste automático de la altura */
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+    }
+
+    .card {
+        height: auto; /* Ajuste automático de la altura */
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+        margin-bottom: 20px; /* Espacio entre las tarjetas */
+    }
+
+    nav ul li {
+        display: block; /* Muestra los elementos de la navegación en bloque */
+        margin-bottom: 10px; /* Espacio entre los elementos de la navegación */
+    }
+
+    footer {
+        position: relative; /* Para que el pie de página esté al final del contenido */
+    }
+}
+
