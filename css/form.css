@@ -65,3 +65,13 @@ input[type="button"]:hover {
     font-family: "Bodoni Moda", serif;
     font-optical-sizing: auto;
 }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; 
+    width: 100%;
+    margin-top: 20px; 
+}
