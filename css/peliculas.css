@@ -18,25 +18,23 @@ body {
   
   /* Navegación */
   nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav a {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #333;
-  }
-  
-  /* Espacio para el header */
-  .espacio-header {
-    height: 40px; /* Altura del espacio */
-  }
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
   
   /* Contenido principal */
   main {

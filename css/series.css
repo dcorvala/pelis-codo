@@ -1,0 +1,94 @@
+/* Estilo general del body */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco transparente */
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  /* Navegación */
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+  
+  /* Espacio para el header */
+  .espacio-header {
+    height: 40px; /* Altura del espacio */
+  }
+  
+  /* Contenido principal */
+  main {
+    padding: 20px;
+    margin-top: 45px;
+  }
+  
+  /* Sección de series */
+  .series {
+    display: flex; /* Habilitar flexbox para la lista de series */
+    flex-wrap: wrap; /* Permitir que las series se envuelvan en varias filas */
+    justify-content: space-between; /* Distribuir las series con espacio entre ellas */
+  }
+  
+  .serie {
+    width: 30%; /* Ancho de cada serie (ajustar según sea necesario) */
+    margin-bottom: 20px; /* Espacio entre series */
+    border: 1px solid #ccc; /* Borde para separar las series */
+    padding: 15px;
+  }
+  
+  .serie h2 {
+    margin-top: 0; /* Eliminar margen superior por defecto */
+    font-size: 18px;
+  }
+  
+  .serie p {
+    margin-bottom: 0; /* Eliminar margen inferior por defecto */
+    font-size: 14px;
+  }
+  
+  /* Responsive design para diferentes tamaños de pantalla */
+  @media (max-width: 768px) {
+    .serie {
+      width: 48%; /* Ajustar ancho para pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .serie {
+      width: 100%; /* Una serie por fila en pantallas muy pequeñas */
+    }
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    
+  }
+  
