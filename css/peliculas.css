@@ -80,18 +80,18 @@ footer {
 
 @media (max-width: 768px) {
   .carousel-inner img {
-      max-height: 300px; /* Ajusta la altura para pantallas pequeñas */
+      max-height: 300px; 
   }
   .card img {
-      width: 50%; /* Ajusta el ancho para pantallas más pequeñas */
+      width: 50%; 
   }
 }
 
 @media (max-width: 576px) {
   .carousel-inner img {
-      max-height: 200px; /* Ajusta la altura para pantallas muy pequeñas */
+      max-height: 200px; 
   }
   .card img {
-      width: 80%; /* Ajusta el ancho para pantallas muy pequeñas */
+      width: 80%; 
   }
 }
